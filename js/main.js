@@ -48,3 +48,25 @@ var presidents = [
     ];
 
 console.log(presidents[2].firstName + ' ' + presidents[2].lastName);
+
+//Function Declaration
+function howdy() {
+    return 'Tiffany Trujillo says hi!';
+}
+
+console.log( howdy() );
+
+//Function Expression
+
+var numba = function() {
+  if (numba.length < 7) {
+    return ("What a short little word!");
+  } else if (numba.length > 7) {
+    return ("I'm sorry, but that's too many to count!");
+  }
+  else {
+    return ("7, what a perfect choice!");
+  }
+}
+
+//Function with Parameter
