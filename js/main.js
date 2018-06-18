@@ -58,10 +58,10 @@ console.log( howdy() );
 
 //Function Expression
 
-var numba = function() {
-  if (numba.length < 7) {
+var numba = function (string) {
+  if (string.length < 7) {
     return ("What a short little word!");
-  } else if (numba.length > 7) {
+  } else if (string.length > 7) {
     return ("I'm sorry, but that's too many to count!");
   }
   else {
@@ -69,4 +69,22 @@ var numba = function() {
   }
 }
 
-//Function with Parameter
+console.log( numba ("7"));
+
+console.log( numba ("seventy"));
+
+console.log( numba ("university"));
+
+//Function with Two Parameters
+
+function inception (display, favMovie) {
+  display(favMovie);
+}
+
+inception(display, "La La Land");
+
+function display (name){
+  console.log(name + " is a fantastic movie!");
+}
+
+//End Assignment
